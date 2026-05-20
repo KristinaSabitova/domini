@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="auth-box">
+    <h1>{{ g.t.register if register_mode else g.t.login }}</h1>
+    <form method="post">
+        <label class="field">
+            <span>{{ g.t.username }}</span>
+            <input name="username" autocomplete="username" required>
+        </label>
+        <label class="field">
+            <span>{{ g.t.password }}</span>
+            <input name="password" type="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit">{{ g.t.register if register_mode else g.t.login }}</button>
+    </form>
+</section>
+{% endblock %}

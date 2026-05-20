@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+instance/*.db
+certs/*.crt
+certs/*.key
+.DS_Store
+.venv/
+instance/
+certs/
+.env
